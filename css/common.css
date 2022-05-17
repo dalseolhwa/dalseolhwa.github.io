@@ -1,0 +1,189 @@
+@import url(normalize.min.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+:root {
+    --body-ff:'Noto Sans KR', sans-serif;
+    --body-fz:1rem;
+    --line-height:28px;
+    --primary-c :#198ef5;
+    --secondary-c :#ddded9;
+    --hover-c :#eeeeee;
+    --white : #fff;
+    --backgroung-c :#fafafa;
+    --body-tc:#555555;
+    --con-width : 1320px;
+    --title-color:#1a1a1a;
+}
+/*
+typopgraphy
+*/
+body{
+    font-family: var(--body-ff);
+    font-size: var(--body-fz);
+    line-height: var(--line-height);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--title-ff);
+    color: var(--title-color);
+}
+.main_tt{
+    font-size:calc(var(--body-fz)*3.25);
+    font-weight: 700;
+    line-height: calc(var(--line-height)*2);
+}
+.sub_tt{
+    font-size:calc(var(--body-fz)*2.25);
+    font-weight: 400;
+}
+.content_tt{
+    font-size:calc(var(--body-fz)*1.875);
+    font-weight: 700;
+    text-align: left;
+}
+.content_sub_tt{
+    font-size:calc(var(--body-fz)*1.375);
+    font-weight: 400;
+}
+.content_small_tt{
+    font-size:calc(var(--body-fz)*0.9375);
+    font-weight: 300;
+}
+.content_desc{
+    width: 770px;
+    margin: 0 auto var(--line-height);
+    text-align: center;
+}
+em{
+    color:var(--primary-c);
+}
+.link{
+    color:var(--primary-c);
+    text-decoration: underline;
+}
+.white_bg {
+    background: var(--white);
+}
+.secondary_bg {
+    background: var(--secondary-c);
+}
+.primary_color {
+    color: var(--primary-c);
+}
+.secondary_color {
+    color: var(--secondary-c);
+}
+.f_color {
+    color:var(--title-color) ;
+}
+
+.btn{
+    border-radius:20px;
+    display: inline-block;
+    font-size: calc(var(--body-fz)*.875);
+    vertical-align: bottom;
+}
+.primary.btn{
+    height: 74px;
+    line-height: 74px;
+    text-transform: uppercase;
+    font-family: var(--title-ff);
+    font-weight: 400;
+    padding: 0 40px;
+    border: 1px solid var(--title-color);
+    box-sizing: border-box;
+    transition:0.5s;
+    overflow: hidden;    
+}
+.primary.btn:hover{
+    background-color: var(--hover-c);
+}
+.secondary.btn{
+    height: 32px;
+    line-height: 30px; 
+    border:1px solid var(--title-color);
+    box-sizing: border-box;
+    padding: 0 10px;
+    color:var(--body-tc);
+}
+.secondary.btn:hover, .secondary.btn.active{
+    background: var(--hover-c);
+}
+/*
+LAYOUT
+이 밑으로 수정 필요
+*/
+/*
+.container{
+    width: var(--con-width);
+    margin:0 auto;
+}
+.hidden {
+    display: none;
+}
+.con-pd{
+    padding: calc(var(--line-height)*3) 0;
+}
+.con-top-pd{
+    padding-top: calc(var(--line-height)*3);
+}
+.sprite{
+    background-image: url(../images/counter_sprites.png);
+}
+
+header{
+    position: absolute;
+    z-index:1;
+    left: 0;
+    right: 0;
+    padding: 38px 0;
+    transition: 0.3s;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    gap:60px;
+}
+header nav ul{
+    display: flex;
+    gap:30px;
+}
+.logo a{
+    width: 186px;
+    height: 56px;
+    background: url(../images/Logo.png) no-repeat;
+    display: block;
+    text-indent: -9999em;
+}
+header nav ul li a{
+    color: var(--white);
+}
+header nav ul li a:hover{
+    color:var(--secondary-c);
+}
+header.active{
+    position: fixed;
+    background: var(--white);
+    padding: 12px 0;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+header.active nav ul li a{
+    color: #8c8c8c;
+}
+header.active nav ul li a:hover{
+    color: var(--secondary-c);
+}
+.active .logo a{
+    background-image: url(../images/Logo_sticky.png);
+}
+.mobile_menu-toggle{
+    display: none;
+}
+.mobile_menu_close{
+    display: none;
+}
+*/
