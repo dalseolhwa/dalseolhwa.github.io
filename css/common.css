@@ -108,6 +108,17 @@ em{
 .secondary.btn:hover, .secondary.btn.active{
     background: var(--hover-c);
 }
+.side.btn{
+   
+    line-height: 30px; 
+    border:1px solid var(--title-color);
+    box-sizing: border-box;
+    padding: 3px 20px;
+    color:var(--body-tc);
+}
+.side.btn:hover, .secondary.btn.active{
+    background: var(--hover-c);
+}
 /*
 LAYOUT
 이 밑으로 수정 필요
