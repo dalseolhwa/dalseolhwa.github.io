@@ -25,10 +25,10 @@
             </ul>
         </div>
         <div class="headerMain">
-            <h1 class="logo">
-                <img src="images/logo.png" alt="">
-            </h1>
             <nav class="gnb">
+                <h1 class="logo">
+                    <img src="images/logo.png" alt="">
+                </h1>
                 <ul>
                     <li><a href="">my</a></li>
                     <li><a href="">카드</a></li>
@@ -54,8 +54,7 @@
         </div>
     </header>
     <main class="container">
-        <div class="contents">
-            <div class="mainCon">
+        <div class="mainCon">
                 <section class="banner_slide slide_wrapper">
                     <ul class="slide_container">
                         <li class="slide1">
@@ -105,10 +104,10 @@
                 </section>
                 <section class="card_slide">
                     <div class="card_info_btn">
-                        <button>best</button>
-                        <button>삼성iD</button>
-                        <button>프리미엄</button>
-                        <button>법인</button>
+                        <a href="#best">best</a>
+                        <a href="#id">삼성 iD</a>
+                        <a href="#premium">프리미엄</a>
+                        <a href="#corp">법인</a>
                     </div>
                     <div class="finder">
                         <a href="" class="secondary btn f_color">내게 맞는 카드 찾기 
@@ -119,7 +118,7 @@
                         </a>
                     </div>
                     <div class="cardList">
-                        <div class="card_cont currnet">
+                        <div class="card_cont currnet" id="best">
                             <ul class="card_tap_wrapper">
                                 <li class="card_tap">
                                     <img src="images/card_iD_On.gif" alt="">
@@ -144,8 +143,12 @@
                                 </li>
 
                             </ul>
+                            <p class="controls">
+                                <a href="" class="prev">prev</a>
+                                <a href="" class="next">next</a>
+                            </p>
                         </div>
-                        <div class="card_cont">
+                        <div class="card_cont" id="id">
                             <ul class="card_tap_wrapper">
                                 <li class="card_tap">
                                     <img src="images/card_iD_On.gif" alt="">
@@ -180,8 +183,12 @@
                                     <h3>삼성 iD MOVE</h3>
                                 </li>
                             </ul>
+                            <p class="controls">
+                                <a href="" class="prev">prev</a>
+                                <a href="" class="next">next</a>
+                            </p>
                         </div>
-                        <div class="card_cont">
+                        <div class="card_cont" id="premiun">
                             <ul class="card_tap_wrapper">
                                 <li class="card_tap">
                                     <img src="images/card_amrican_express_1.png" alt="">
@@ -205,8 +212,12 @@
                                     <h3>THE O</h3>
                                 </li>
                             </ul>
+                            <p class="controls">
+                                <a href="" class="prev">prev</a>
+                                <a href="" class="next">next</a>
+                            </p>
                         </div>
-                        <div class="card_cont">
+                        <div class="card_cont" id="corp">
                             <ul class="card_tap_wrapper">
                                 <li class="card_tap">
                                     <img src="images/card_corporate_1.png" alt="">
@@ -230,6 +241,10 @@
                                 </li>
 
                             </ul>
+                            <p class="controls">
+                                <a href="" class="prev">prev</a>
+                                <a href="" class="next">next</a>
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -542,9 +557,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            </aside>
-        </div>
+            </section
     </main>
     <footer>
         <div class="footer_lline">
