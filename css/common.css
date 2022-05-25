@@ -121,9 +121,8 @@ em{
 }
 /*
 LAYOUT
-이 밑으로 수정 필요
 */
-/*
+
 .container{
     width: var(--con-width);
     margin:0 auto;
@@ -132,69 +131,78 @@ LAYOUT
     display: none;
 }
 .con-pd{
-    padding: calc(var(--line-height)*3) 0;
+    padding: calc(var(--line-height)*1.5) 0;
 }
 .con-top-pd{
     padding-top: calc(var(--line-height)*3);
 }
-.sprite{
-    background-image: url(../images/counter_sprites.png);
-}
 
+/*
+HEADER
+*/
 header{
     position: absolute;
     z-index:1;
     left: 0;
     right: 0;
-    padding: 38px 0;
+    padding: 20px 50px;
     transition: 0.3s;
 }
-header > div{
+header .headerTop{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav{
+header .headerTop .menu_link {
+    width: 215px;
     display: flex;
-    gap:60px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+header .headerTop .menu_s {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .headerMain nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 55px;
 }
 header nav ul{
     display: flex;
-    gap:30px;
+    gap:50px;
 }
-.logo a{
-    width: 186px;
-    height: 56px;
-    background: url(../images/Logo.png) no-repeat;
+header .headerMain .hmainRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+header .headerMain .login, header .headerMain .search{
+    display: flex;
+}
+
+header .headerMain .hmainRight .searchWrap{
+    border: 1px solid #1a1a1a;
+    border-radius: 20px;
+    padding: 2px 5px;
+}
+header .logo a{
+    width: 200px;
+    height: 48px;
+    background: url(../images/Logo_2.png) no-repeat;
     display: block;
     text-indent: -9999em;
 }
-header nav ul li a{
-    color: var(--white);
-}
-header nav ul li a:hover{
-    color:var(--secondary-c);
-}
-header.active{
-    position: fixed;
-    background: var(--white);
-    padding: 12px 0;
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
-header.active nav ul li a{
-    color: #8c8c8c;
-}
-header.active nav ul li a:hover{
-    color: var(--secondary-c);
-}
-.active .logo a{
-    background-image: url(../images/Logo_sticky.png);
-}
-.mobile_menu-toggle{
-    display: none;
-}
-.mobile_menu_close{
-    display: none;
-}
-*/
+
+
+
+
+
+
