@@ -1,0 +1,11 @@
+main{
+    display: flex;
+    padding-top: calc(var(--line-height)*6.428);
+}
+main .mainCon{
+    padding-right: 20px;
+}
+main aside{
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}

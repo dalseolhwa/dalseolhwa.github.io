@@ -36,12 +36,12 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 400;
 }
 .content_tt{
-    font-size:calc(var(--body-fz)*1.875);
+    font-size:calc(var(--body-fz)*1.375);
     font-weight: 700;
     text-align: left;
 }
 .content_sub_tt{
-    font-size:calc(var(--body-fz)*1.375);
+    font-size:calc(var(--body-fz)*1.125);
     font-weight: 400;
 }
 .content_small_tt{
@@ -141,30 +141,40 @@ LAYOUT
 HEADER
 */
 header{
-    position: absolute;
+    position: fixed;
     z-index:1;
     left: 0;
     right: 0;
-    padding: 20px 50px;
+    padding: 10px 30px;
     transition: 0.3s;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, .3);
+    background: #fff;
 }
 header .headerTop{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size:calc(var(--body-fz)*0.875);
+    font-weight: 300;
+}
+header .headerTop li:hover a{
+    color: #1a1a1a;
+    text-decoration: underline;
 }
 header .headerTop .menu_link {
     width: 215px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
    
 }
 header .headerTop .menu_s {
-    width: 180px;
+    width: 190px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     
 }
 header .headerMain nav{
@@ -172,16 +182,32 @@ header .headerMain nav{
     justify-content: flex-start;
     align-items: center;
     gap: 55px;
+    font-size: 1;
+    font-weight: 600;
 }
 header nav ul{
     display: flex;
     gap:50px;
 }
+
+
+header .headerMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 header .headerMain .hmainRight{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 248px;
+    gap: 10px;
+    font-size:calc(var(--body-fz)*0.875);
+    font-weight: 300;
+}
+header .headerMain .hmainRight .login:hover span{
+    color: var(--primary-c);
 }
 
 header .headerMain .login, header .headerMain .search{
@@ -191,8 +217,19 @@ header .headerMain .login, header .headerMain .search{
 header .headerMain .hmainRight .searchWrap{
     border: 1px solid #1a1a1a;
     border-radius: 20px;
-    padding: 2px 5px;
+    padding: 0px 15px;
+    line-height: calc(var(--line-height)*1.214);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
 }
+header .headerMain .hmainRight .searchWrap:hover span{
+    color: var(--primary-c);
+}
+
 header .logo a{
     width: 200px;
     height: 48px;
