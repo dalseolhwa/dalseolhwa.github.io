@@ -7,6 +7,7 @@ main .mainCon{
     padding-right: 20px;
 }
 main aside{
+    width: 419px;
     border-left: 1px solid #ccc;
     padding-left: 20px;
 }
@@ -15,13 +16,19 @@ main aside{
 .banner_slide{
     position: relative;
     border-radius: 20px;
+    overflow: hidden;
 }
 .banner_slide .slide_container{
     width: 100%;
     height: 380px;
     position: relative;
 }
-.banner_slide .slide_1, .banner_slide .slide_2, .banner_slide .slide_3, .banner_slide .slide_4, .banner_slide .slide_5{
+.banner_slide .slick-slide img {
+    display: block;
+    width: 100%;
+}
+
+.banner_slide [class^=slide]{
     position: relative;
 }
 .banner_slide .slide_container h3{
@@ -78,10 +85,9 @@ main aside{
     display: flex;
     justify-content: center;
     align-items: center;  
+    gap: 5px;
 }
-.banner_slide .paging .pager_num p{
-    margin: 0 3px;
-}
+
 
 /*-------------------card_slide-------------------*/
 .card_slide .card_slide_wrap{
@@ -142,6 +148,9 @@ main aside{
     height: 169px;
 
 }
+.card_tap_wrapper .slick-list{ 
+    padding-top: 20px;
+}
 .card_slide .controls{
     display: none;
 }
@@ -179,18 +188,54 @@ main aside{
 .benefit .sub_wrapper a:hover span:last-child{
     color: var(--primary-c);
 }
-.benefit_slide .slide1, .benefit_slide .slide2, .benefit_slide .slide3{
+.benefit_slide{
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.benefit_slide .slide{
+    position: relative;
+}
+.benefit_slide .slide >img{
+    width: 100%;
 }
 .benefit_slide .slide_cont{
     position: absolute;
-    top: 50px;
-    left: 100px;
+    top: 40px;
+    left: 140px;
 
 }
 .benefit_slide .slide_cont h3{
-    font-size:calc(var(--body-fz)*1.125)
+    font-size:calc(var(--body-fz)*1.125);
+    font-weight: 700;
 }
 .benefit_slide .slide_cont p{
-    font-size:calc(var(--body-fz)*0.8125)
+    font-size:calc(var(--body-fz)*0.8125);
+}
+.benefit_slide .controls a{
+    font-size: 50px;
+    color: var(--body-tc);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+}
+.benefit_slide .controls .prev{
+    margin-left: -421px;
+}
+.benefit_slide .controls .next{
+    margin-left: 419px;
+}
+.benefit_slide .paging{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;right: 0;bottom: 0;
+}
+.benefit_slide .paging .pager_num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
