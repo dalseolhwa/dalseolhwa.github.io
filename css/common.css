@@ -35,6 +35,11 @@ h1,h2,h3,h4,h5,h6{
     font-size:calc(var(--body-fz)*2.25);
     font-weight: 400;
 }
+.slide_tt{
+    font-size:calc(var(--body-fz)*1.5);
+    font-weight: 700;
+    line-height: calc(var(--line-height)*1.33);
+}
 .content_tt{
     font-size:calc(var(--body-fz)*1.375);
     font-weight: 700;

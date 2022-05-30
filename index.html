@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <title>samsung card</title>
@@ -57,39 +59,47 @@
     <main class="container">
         <div class="mainCon">
                 <section class="banner_slide slide_wrapper ">
-                    <ul class="slide_container">
-                        <li class="slide1">
-                            <div class="content">
-                                <h2 class="main_tt">진짜 나를 담은 <em>iD</em></h2>
+                    <div class="slide_container">
+                        <div class="slide_1">
+                            <img src="images/main_banner_1.png" alt="">
+                            <div class="slide_cont">
+                                <h2 class="slide_tt">따뜻한 가정의달</h2>
+                                <h2 class="slide_tt">삼성카드가 함께할게요</h2>    
+                                <h3>모든 날이 봄이 되는 삼성카드의 마법!</h3>
+
                             </div>
-                        </li>
-                        <li class="slide2">
-                            <div class="content">
-                                <h2 class="main_tt">따뜻한 가정의달
-                                    삼성카드가 함께할게요</h2>
-                                <h3 class="sub_tt">모든 날이 봄이 되는 삼성카드의 마법!</h3>
+                        </div >
+                        <div class="slide_2">
+                            <img src="images/main_banner_2.png" alt="">
+                            <div class="slide_cont">
+                                <h2 class="slide_tt">진짜 나를 담은 <em>iD</em></h2>
                             </div>
-                        </li>
-                        <li class="slide3">
-                            <div class="content">
-                                <h2 class="main_tt">전기차 필수 혜택만 모아모아 삼성카드 iD EV카드</h2>
+                        </div>
+                        <div class="slide_3">
+                            <img src="images/main_banner_3.png" alt="">
+                            <div class="slide_cont">
+                                <h2 class="slide_tt">전기차 필수 혜택만 모아모아 삼성카드 iD EV카드</h2>
+                                
                             </div>
-                        </li>
-                        <li class="slide4">
-                            <div class="content">
-                                <h2 class="main_tt">흩어진 내 금융정보 통합자산관리</h2>
-                                <h3 class="sub_tt">현명한 금융 라이프 시작</h3>
+                        </div>
+                        <div class="slide_4">
+                            <img src="images/main_banner_4.png" alt="">
+                            <div class="slide_cont">
+                                <h2 class="slide_tt">흩어진 내 금융정보 통합자산관리</h2>
+                                <h3>현명한 금융 라이프 시작</h3>    
                             </div>
-                        </li>
-                        <li class="slide5">
-                            <div class="content">
-                                <h2 class="main_tt">학부모님 걱정을 덜어내다! 똑똑한 삼성 iD EDU카드</h2>
+                        </div>
+                        <div class="slide_5">
+                            <img src="images/main_banner_5.png" alt="">
+                            <div class="slide_cont">
+                                <h2 class="slide_tt">학부모님 걱정을 덜어내다! 똑똑한 삼성 iD EDU카드</h2>
+                                
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     <p class="controls">
-                        <a href="" class="prev">prev</a>
-                        <a href="" class="next">next</a>
+                        <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                        <a href="" class="next material-symbols-outlined">chevron_right</a>
                     </p>
                     <div class="paging">
                         <div class="pager_num">
@@ -98,153 +108,157 @@
                             <p class="total">5</p>
                         </div>
                         <div class="btns">
-                            <span class="play">start</span>
-                            <span class="stop">stop</span>
+                            <span class="play material-symbols-outlined">play_arrow</span>
+                            <span class="stop material-symbols-outlined">pause</span>
                         </div>
                     </div>
                 </section>
                 <section class="card_slide con-pd">
-                    <div class="card_info_btn ">
-                        <a href="#best">best</a>
-                        <a href="#id">삼성 iD</a>
-                        <a href="#premium">프리미엄</a>
-                        <a href="#corp">법인</a>
-                    </div>
-                    <div class="finder">
-                        <a href="" class="secondary btn f_color">내게 맞는 카드 찾기 
-                            <span class="material-symbols-outlined">chevron_right</span>
-                        </a>
-                        <a href="" class="secondary btn f_color">친구에서 카드추천 
-                            <span class="material-symbols-outlined">chevron_right</span>
-                        </a>
+                    <div class="card_slide_wrap">
+                        <div class="card_info_btn ">
+                            <a href="#best" class="content_tt">best</a>
+                            <a href="#id" class="content_tt">삼성 iD</a>
+                            <a href="#premium" class="content_tt">프리미엄</a>
+                            <a href="#corp" class="content_tt">법인</a>
+                        </div>
+                        <div class="finder">
+                            <a href="" class="secondary btn f_color">
+                                <span>내게 맞는 카드 찾기</span>
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                            <a href="" class="secondary btn f_color"> 
+                                <span>친구에서 카드추천</span>
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="cardList">
                         <div class="card_cont currnet" id="best">
-                            <ul class="card_tap_wrapper">
-                                <li class="card_tap">
+                            <div class="card_tap_wrapper">
+                                <div class="card_tap">
                                     <img src="images/card_iD_On.gif" alt="">
                                     <h3>삼성 iD ON</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_monimo.png" alt="">
                                     <h3>모니모</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_taptap.png" alt="">
                                     <h3>삼성 tpatpa O</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_skypass.png" alt="">
                                     <h3>&amp; MISEAGE 
                                         PLATIUM </h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_MOVE.gif" alt="">
                                     <h3>삼성 iD MOVE</h3>
-                                </li>
+                                </div>
 
-                            </ul>
+                            </div>
                             <p class="controls">
-                                <a href="" class="prev">prev</a>
-                                <a href="" class="next">next</a>
+                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                                <a href="" class="next material-symbols-outlined">chevron_right</a>
                             </p>
                         </div>
                         <div class="card_cont" id="id">
-                            <ul class="card_tap_wrapper">
-                                <li class="card_tap">
+                            <div class="card_tap_wrapper">
+                                <div class="card_tap">
                                     <img src="images/card_iD_On.gif" alt="">
                                     <h3>삼성 iD ON</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_All_02.gif" alt="">
                                     <h3>삼성 iD ALL</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_Ev.gif" alt="">
                                     <h3>삼성 iD EV</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_Pocket.gif" alt="">
                                     <h3>삼성 iD POCKET</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_Energy.gif" alt="">
                                     <h3>삼성 iD ENERGY</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_Biz.gif" alt="">
                                     <h3>삼성 iD BIZ BENEFIT</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_EDU.gif" alt="">
                                     <h3>삼성 iD EDU</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_iD_MOVE.gif" alt="">
                                     <h3>삼성 iD MOVE</h3>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                             <p class="controls">
-                                <a href="" class="prev">prev</a>
-                                <a href="" class="next">next</a>
+                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                                <a href="" class="next material-symbols-outlined">chevron_right</a>
                             </p>
                         </div>
-                        <div class="card_cont" id="premiun">
-                            <ul class="card_tap_wrapper">
-                                <li class="card_tap">
+                        <div class="card_cont" id="premium">
+                            <div class="card_tap_wrapper">
+                                <div class="card_tap">
                                     <img src="images/card_amrican_express_1.png" alt="">
                                     <h3>American Express Platinum</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_amrican_express_2.png" alt="">
                                     <h3>American Express&reg; Gold</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_amrican_express_3.png" alt="">
                                     <h3>
                                         American Express&reg; Reserve</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_the_1.png" alt="">
                                     <h3>THE 1</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_the_o.png" alt="">
                                     <h3>THE O</h3>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                             <p class="controls">
-                                <a href="" class="prev">prev</a>
-                                <a href="" class="next">next</a>
+                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                                <a href="" class="next material-symbols-outlined">chevron_right</a>
                             </p>
                         </div>
                         <div class="card_cont" id="corp">
-                            <ul class="card_tap_wrapper">
-                                <li class="card_tap">
+                            <div class="card_tap_wrapper">
+                                <div class="card_tap">
                                     <img src="images/card_corporate_1.png" alt="">
                                     <h3>CORPORATE#7 MORE</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_corporate_2.png" alt="">
                                     <h3>CORPORATE#2</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_corporate_3.png" alt="">
                                     <h3>CORPORATE GLOBAL</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_corporate_4.png" alt="">
                                     <h3>CORPORATE</h3>
-                                </li>
-                                <li class="card_tap">
+                                </div>
+                                <div class="card_tap">
                                     <img src="images/card_corporate_5.png" alt="">
                                     <h3>삼성 스카이패스 법인카드</h3>
-                                </li>
+                                </div>
 
-                            </ul>
+                            </div>
                             <p class="controls">
-                                <a href="" class="prev">prev</a>
-                                <a href="" class="next">next</a>
+                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                                <a href="" class="next material-symbols-outlined">chevron_right</a>
                             </p>
                         </div>
                     </div>
@@ -252,20 +266,38 @@
                 <section class="benefit con-pd">
                     <div class="sub_wrapper">
                         <h2 class="content_tt">맞춤혜택</h2>
-                        <a href="" class="secondary btn f_color">맞춤혜택 더보기 
+                        <a href="" class="secondary btn f_color">
+                            <span>맞춤혜택 더보기</span> 
                             <span class="material-symbols-outlined">chevron_right</span>
                         </a>
                     </div>
                     <div class="benefit_slide slide_wrapper">
-                        <ul class="slide_container">
-                            <li class="slide1"></li>
-                            <li class="slide2"></li>
-                            <li class="slide3"></li>
-                            <li class="slide4"></li>
-                        </ul>
+                        <div class="slide_container">
+                            <div class="slide1">
+                                <img src="images/Benefit_bannerbg1.png" alt="">
+                                <div class="slide_cont">
+                                    <img src="images/ttl_link_top.png" alt="">
+                                    <h3>혜택을 미리 링크하면, 결제할 때 혜택이 알아서 척!</h3>
+                                </div>
+                            </div>
+                            <div class="slide2">
+                                <img src="images/Benefit_bannerbg2.png" alt="">
+                                <div class="slide_cont">
+                                    <h3>프리미엄 리워즈 라운지</h3>
+                                    <p>프리미엄 회원만이 누릴 수 있는 혜택!</p>
+                                </div>
+                            </div>
+                            <div class="slide3">
+                                <img src="images/Benefit_bannerbg3.png" alt="">
+                                <div class="slide_cont">
+                                    <h3>이마트 트레이더스 라운지</h3>
+                                    <p>첫 결제시 30% 캐시백!</p>
+                                </div>
+                            </div>
+                        </div>
                         <p class="controls">
-                            <a href="" class="prev">prev</a>
-                            <a href="" class="next">next</a>
+                            <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                            <a href="" class="next material-symbols-outlined">chevron_right</a>
                         </p>
                         <div class="paging">
                             <div class="pager_num">
@@ -651,5 +683,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
