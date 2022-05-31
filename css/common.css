@@ -9,7 +9,7 @@
     --secondary-c :#ddded9;
     --hover-c :#eeeeee;
     --white : #fff;
-    --backgroung-c :#fafafa;
+    --backgroung-c :#553a3a;
     --body-tc:#555555;
     --con-width : 1320px;
     --title-color:#1a1a1a;
@@ -123,6 +123,25 @@ em{
 }
 .side.btn:hover, .secondary.btn.active{
     background: var(--hover-c);
+}
+/*
+btn
+*/
+.sub_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.sub_wrapper a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sub_wrapper a:hover span:last-child{
+    color: var(--primary-c);
+}
+.material-symbols-outlined{
+    vertical-align: text-top;
 }
 /*
 LAYOUT
@@ -243,6 +262,7 @@ header .logo a{
     display: block;
     text-indent: -9999em;
 }
+
 
 
 

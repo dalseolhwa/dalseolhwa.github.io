@@ -41,6 +41,7 @@
                     <li><a href="">라이프</a></li>
                     <li><a href="">고객센터</a></li>
                 </ul>
+                <span class="highlight"></span>
             </nav>
             <div class="hmainRight">
                 <div class="login">
@@ -303,7 +304,7 @@
                             <div class="pager_num">
                                 <p class="currnet">1</p>
                                 <p>/</p>
-                                <p class="total">4</p>
+                                <p class="total">3</p>
                             </div>
                             <div class="btns">
                                 <span class="play material-symbols-outlined">play_arrow</span>
@@ -313,7 +314,13 @@
                     </div>
                 </section>
                 <section class="periodic_payment con-pd">
-                    <h2 class="content_tt con-bottom-pd">정기결제</h2>
+                    <div class="sub_wrapper">
+                        <h2 class="content_tt con-bottom-pd">정기결제</h2>
+                        <a href="" class="secondary btn f_color">
+                            <span>맞춤혜택 더보기</span> 
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
                     <div class="pp_wrapper">
                         <ul class="pp_wrap">
                             <li class="pp_cont">
@@ -370,7 +377,7 @@
                                 </div>
                                 <div class="caption">
                                     <h3 class="content_sub_tt">신차 카드할부</h3>
-                                    <p>최저 연 1.0%에 중도상환수수료 0!</p>
+                                    <p>최저 연 <em>1.0%</em> 중도상환수수료 0%!</p>
                                 </div>
                             </li>
                             <li>
@@ -379,7 +386,7 @@
                                 </div>
                                 <div class="caption">
                                     <h3 class="content_sub_tt">신차 오토할부</h3>
-                                    <p>전차종 동일하게 최저 연 1.0%</p>
+                                    <p>전차종 동일하게 최저 연 <em>1.0%</em></p>
                                 </div>
                             </li>
                             <li>
@@ -387,8 +394,8 @@
                                     <img src="images/car3.png" alt="">
                                 </div>
                                 <div class="caption">
-                                    <h3 class="content_sub_tt">종고차론</h3>
-                                    <p>할부금리 최저 연 4.3%</p>
+                                    <h3 class="content_sub_tt">중고차론</h3>
+                                    <p>할부금리 최저 연 <em>4.3%</em></p>
                                 </div>
                             </li>
                             <li>
@@ -397,7 +404,7 @@
                                 </div>
                                 <div class="caption">
                                     <h3 class="content_sub_tt">카드일시불</h3>
-                                    <p>최대 1.2%까지 캐시백 혜택!</p>
+                                    <p>최대 <em>1.2%</em>까지 캐시백 혜택!</p>
                                 </div>
                             </li>
                         </ul>
@@ -444,17 +451,17 @@
                 </div>
                 <form action="#" method="post">
                     <div class="user_login">
-                        <p>
+                        <div>
                             <label for="user_id" class="hidden"></label>
                             <p>아이디</p>
                             <input type="email" value="" id="user_id" name="email">
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <label for="user_pass" class="hidden"></label>
                             <p>비밀번호</p>
                             <input type="password" value="" id="user_pass" name="password">
                             <span class="material-symbols-outlined">mouse</span>
-                        </p>
+                        </div>
                     </div>
                     <p>
                         <input type="submit" value="로그인">
@@ -490,13 +497,13 @@
                             <a href="" class="side btn f_color">#추천 삼성iD 카드</a>
                         </li>
                         <li>
-                            <a href="" class="side btn f_color">#이용한도</a>
+                            <a href="" class="side btn f_color">#명세서</a>
                         </li>
                         <li>
                             <a href="" class="side btn f_color">#즉시결제 </a>
                         </li>
                         <li>
-                            <a href="" class="side btn f_color">#명세서</a>
+                            <a href="" class="side btn f_color">#이용한도</a>
                         </li>
                         <li>
                             <a href="" class="side btn f_color">#포인트</a>
@@ -545,52 +552,56 @@
                 </div>
             </section>
             <section class="ss_story con-pd">
-            <h2 class="content_tt con-bottom-pd">삼성카드 스토리</h2>
-            <div class="banner_slide slide_wrapper">
-                <ul class="slide_container">
-                    <li class="slide1">
-                        <div class="content">
-                            <h2 class="content_sub_tt">MY 리틀포레스트</h2>
-                            <h3>도시 농부의 핫플 5</h3>
+                <h2 class="content_tt con-bottom-pd">삼성카드 스토리</h2>
+                <div class="banner_slide slide_wrapper">
+                    <div class="slide_container">
+                        <div class="slide">
+                            <img src="images/ss_slide_bg_1.png" alt="">
+                            <div class="content">
+                                <h2 >MY 리틀포레스트</h2>
+                                <h3>도시 농부의 핫플 5</h3>
+                            </div>
                         </div>
-                    </li>
-                    <li class="slide2">
-                        <div class="content">
-                            <h2 class="content_sub_tt">싱가포르 in 원데이 세계여행</h2>
-                            <h3>싱가포르, 낯선 시간의 연속된 하루</h3>
+                        <div class="slide">
+                            <img src="images/ss_slide_bg_2.png" alt="">
+                            <div class="content">
+                                <h2>싱가포르 in 원데이 세계여행</h2>
+                                <h3>싱가포르, 낯선 시간의 연속된 하루</h3>
+                            </div>
                         </div>
-                    </li>
-                    <li class="slide3">
-                        <div class="content">
-                            <h2 class="content_sub_tt">레고랜드 하루 살기</h2>
-                            <h3>아빠, 레고랜드로 전입신고 하고 싶어요</h3>
+                        <div class="slide">
+                            <img src="images/ss_slide_bg_3.png" alt="">
+                            <div class="content">
+                                <h2>레고랜드 하루 살기</h2>
+                                <h3>아빠, 레고랜드로 전입신고 하고 싶어요</h3>
+                            </div>
                         </div>
-                    </li>
-                    <li class="slide4">
-                        <div class="content">
-                            <h2 class="content_sub_tt">대한민국 중심 대전 방문기</h2>
-                            <h3>분위기 만점 매력적인 대전 서구 카페 3</h3>
+                        <div class="slide">
+                            <img src="images/ss_slide_bg_4.png" alt="">
+                            <div class="content">
+                                <h2>대한민국 중심 대전 방문기</h2>
+                                <h3>분위기 만점 매력적인 대전 서구 카페 3</h3>
+                            </div>
                         </div>
-                    </li>
-                    <li class="slide5">
-                        <div class="content">
-                            <h2 class="content_sub_tt">서울에서 만나는 
-                                미식 세계여행</h2>
+                        <div class="slide">
+                            <img src="images/ss_slide_bg_5.png" alt="">
+                            <div class="content">
+                                <h2>서울에서 만나는<br>미식 세계여행</h2>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-                <div class="paging">
-                    <div class="pager_num">
-                        <p class="currnet">1</p>
-                        <p>/</p>
-                        <p class="total">5</p>
                     </div>
-                    <div class="btns">
-                        <span class="play">start</span>
-                        <span class="stop">stop</span>
+                    <div class="paging">
+                        <div class="pager_num">
+                            <p class="currnet">1</p>
+                            <p>/</p>
+                            <p class="total">5</p>
+                        </div>
+                        <div class="btns">
+                            <span class="play material-symbols-outlined">play_arrow</span>
+                            <span class="stop material-symbols-outlined">pause</span>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
         </aside>
     </main>
@@ -686,6 +697,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

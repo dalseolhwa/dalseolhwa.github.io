@@ -1,6 +1,11 @@
 /*-------------------mainCon banner-------------------*/
+
+
+/*-------------------mainCon banner-------------------*/
 $('.slide_container').slick({
-    arrows:false
+    arrows:false,
+    autoplay: true,
+    autoplaySpeed: 4000
 });
 
 $('.banner_slide .controls .next').click(function(e){
@@ -18,7 +23,9 @@ $('.card_tap_wrapper').slick({
     arrows:false,
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000
 });
 
 $('.card_cont .controls .next').click(function(e){
@@ -67,3 +74,5 @@ $('.benefit_slide .controls .prev').click(function(e){
     e.preventDefault();
     $('.slide_container').slick('slickPrev');
 });
+
+
