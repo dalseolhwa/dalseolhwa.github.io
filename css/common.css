@@ -262,7 +262,24 @@ header .logo a{
     display: block;
     text-indent: -9999em;
 }
-
+/*
+FOOTER
+*/
+footer{
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, .3);
+}
+footer .footer_lline ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+footer .footer_lline a{
+    font-size:calc(var(--body-fz)*0.75);    
+}
+footer .footer_lline li:hover a{
+    text-decoration: underline;
+}
 
 
 
