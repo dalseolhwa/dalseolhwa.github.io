@@ -137,7 +137,7 @@
                         </div>
                     </div>
                     <div class="cardList">
-                        <div class="card_cont currnet best">
+                        <div class="card_cont best">
                             <div class="card_tap_wrapper">
                                 <div class="card_tap">
                                     <img src="images/card_iD_On.gif" alt="">
@@ -162,10 +162,6 @@
                                 </div>
 
                             </div>
-                            <p class="controls">
-                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
-                                <a href="" class="next material-symbols-outlined">chevron_right</a>
-                            </p>
                         </div>
                         <div class="card_cont id">
                             <div class="card_tap_wrapper">
@@ -231,10 +227,6 @@
                                     <h3>THE O</h3>
                                 </div>
                             </div>
-                            <p class="controls">
-                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
-                                <a href="" class="next material-symbols-outlined">chevron_right</a>
-                            </p>
                         </div>
                         <div class="card_cont corp" >
                             <div class="card_tap_wrapper">
@@ -260,10 +252,6 @@
                                 </div>
 
                             </div>
-                            <p class="controls">
-                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
-                                <a href="" class="next material-symbols-outlined">chevron_right</a>
-                            </p>
                         </div>
                     </div>
                 </section>
@@ -421,16 +409,9 @@
                             <span class="material-symbols-outlined">chevron_right</span>
                         </a>
                     </div>
-                    <div class="vc_wrapper">
-                        <div class="content">
-                            <a href="#video" class="icon">
-                                <span class="material-symbols-outlined">play_circle</span>
-                            </a>
-                        </div>
                         <div class="video_wrapper" id="video">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/UrEHWclh7Co?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                    </div>
                 </section>
         </div>
         <aside class="mainSide">
@@ -462,11 +443,11 @@
                         <div>
                             <label for="user_pass" class="hidden"></label>
                             <p>비밀번호</p>
-                            <input type="password" value="" id="user_pass" name="password">
+                            <input type="password" value="" id="user_pass" name="password" minlength="12" maxlength="16">
                             <span class="material-symbols-outlined">mouse</span>
                         </div>
                     </div>
-                    <p>
+                    <p class="logBtn">
                         <input type="submit" value="로그인">
                     </p>
                 </form>
@@ -487,7 +468,7 @@
                     <form action="">
                         <label for="keyword_search">
                             <span class="hidden">검색</span>
-                            <input type="text" id="keyword_search" name="keyword_search" placeholder="검색">
+                            <input type="search" id="keyword_search" name="keyword_search" placeholder="검색">
                         </label>  
                     </form>
                 </div>

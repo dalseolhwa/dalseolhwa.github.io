@@ -87,6 +87,18 @@ main aside{
     align-items: center;  
     gap: 5px;
 }
+.banner_slide .btns{
+    cursor: pointer;
+}
+.banner_slide .btns .stop{
+    display: none;
+}
+.banner_slide .btns.active .stop{
+    display: block;
+}
+.banner_slide .btns.active .play{
+    display: none;
+}
 
 
 /*-------------------card_slide-------------------*/
@@ -106,8 +118,6 @@ main aside{
     width: 95%;
     margin: 0 auto;
     position: relative;
-    padding-top: 28px;
-    padding-bottom: 25px;
 }
 .card_slide .card_info_btn a{
     text-transform: uppercase;
@@ -140,21 +150,25 @@ main aside{
 .card_slide .card_tap{
     transition: 0.3s;
 }
+.card_slide .card_tap:hover{
+    transform:translateY(-10px);
+}
 .card_slide .card_tap:hover img{
     transform:translateY(-10px);
 }
 .card_slide .card_tap_wrapper img{
-    width: 106px;
-    height: 169px;
-
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
 }
 .card_tap_wrapper .slick-list{ 
     padding-top: 20px;
 }
-.card_slide .controls{
-    display: none;
+.card_slide .card_cont h3{
+    font-size: calc(var(--body-fz)*0.8125);
+    text-align: center;
 }
-.card_slide .controls.active{
+.card_slide .controls{
     display: block;
 }
 .card_slide .controls a{
@@ -162,7 +176,7 @@ main aside{
     color: var(--body-tc);
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform:translate(-50%, -50%);
 }
 .card_slide .controls .prev{
@@ -225,6 +239,18 @@ main aside{
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+.benefit_slide .paging .btns{
+    cursor: pointer;
+}
+.benefit_slide .paging .btns .stop{
+    display: none;
+}
+.benefit_slide .paging .btns.active .stop{
+    display: block;
+}
+.benefit_slide .paging .btns.active .play{
+    display: none;
 }
 
 /*-------------------periodic_payment-------------------*/
@@ -305,7 +331,12 @@ main aside{
 }
 
 /*-------------------life-------------------*/
-
+.life .video_wrapper{
+    width: 100%;
+}
+.life .video_wrapper iframe{
+    width: 100%;
+}
 
 /*-------------------login-------------------*/
 
@@ -314,14 +345,90 @@ main aside{
     align-items: center;
     gap: 10px;
 }
+.login form{
+    position: relative;
+}
+.login form .logBtn{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+.login form .logBtn input{
+    width: 105px;
+    height: 74px;
+}
+.login form .user_login > div{
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+.login form .user_login > div{
+    padding-top: 10px;
+    width: 274px;
+}
+/* .login form .user_login p{
+    position: absolute;
+} */
+.login form .user_login input{
+    width: 200px;
+    height: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+.login form .user_login > div:after{
+    content: '';
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #1a1a1a;
+    position: absolute;
+    bottom: -5px;
+    width: 95%;
+    height: 30px;
+}
+.login form .user_login span{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+
+}
+.login .id_finder{
+    padding-top: 10px;
+    width: 270px;
+}
+.login .id_finder ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login .id_finder li{
+    font-size:calc(var(--body-fz)*0.875);
+}
+.login .id_finder li:hover a{
+    color: var(--primary-c);
+}
 
 /*-------------------keyword_search-------------------*/
+
+.keyword_search .kw_btn_wrap{
+    padding-right: 35px;
+}
 .keyword_search .kw_btn_wrap ul{
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     padding-top: 15px;
+}
+.keyword_search input{
+    width: 60%;
+    height: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 
 /*-------------------card_shortcut-------------------*/
@@ -341,14 +448,15 @@ main aside{
 /*-------------------ss_story-------------------*/
 .ss_story .banner_slide{
     position: relative;
-    border-radius: 20px;
-    overflow: hidden;
+
     width: 100%;
     height: 450px;
 }
 .ss_story .slide{
     width: 100%;
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .ss_story .slide img{
     width: 100%;
@@ -367,7 +475,7 @@ main aside{
     height: 120px;
     background: rgba(158, 158, 158, .7);
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     right: 0;
     z-index: -1;
@@ -382,7 +490,9 @@ main aside{
 }
 .ss_story .paging{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 73%;
     right: 0;
 }
+
+
