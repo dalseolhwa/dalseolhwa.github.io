@@ -358,15 +358,21 @@ main aside{
     width: 105px;
     height: 74px;
 }
-.login form .user_login > div{
+.login form .login_border{
     position: relative;
     display: flex;
     gap: 10px;
-}
-.login form .user_login > div{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--hover-c);
     padding-top: 10px;
     width: 274px;
 }
+.login form .login_border:focus-within{
+    border-color: var(--title-color);
+}
+
 /* .login form .user_login p{
     position: absolute;
 } */
@@ -377,17 +383,7 @@ main aside{
     border-right: none;
     border-left: none;
     border-bottom: none;
-}
-.login form .user_login > div:after{
-    content: '';
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 2px solid #1a1a1a;
-    position: absolute;
-    bottom: -5px;
-    width: 95%;
-    height: 30px;
+    outline: none;
 }
 .login form .user_login span{
     position: absolute;

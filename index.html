@@ -60,6 +60,51 @@
             </div>
         </div>
     </header>
+    <div class="search_section">
+        <div class="search_hd">
+            <h1 class="search_logo">
+                <a href="">samsungcard</a>
+            </h1>
+            <div class="box_search_ip">
+                <div class="input_cell">
+                    <input type="text" class="i_text" id="mainSearch" name="search" title="검색어" value="" placeholder="검색어를 입력하세요" autocomplete="off">
+                </div>
+                <div class="btn_box">
+                    <button type="button"><span class="material-symbols-outlined">close</span></button>
+                    <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                </div>
+                <div class="search_list">
+                    <ul>
+                        <li>
+                            <a href="" class="side btn f_color">#MY혜택</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#추천 삼성iD 카드</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#명세서</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#즉시결제 </a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#이용한도</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#포인트</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#개인정보 변경</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#분할납부</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="close_btn">닫기</button>
+        </div>
+    </div>
     <main class="container">
         <div class="mainCon">
                 <section class="banner_slide slide_wrapper ">
@@ -435,12 +480,12 @@
                 </div>
                 <form action="#" method="post">
                     <div class="user_login">
-                        <div>
+                        <div class="login_border">
                             <label for="user_id" class="hidden"></label>
                             <p>아이디</p>
                             <input type="email" value="" id="user_id" name="email">
                         </div>
-                        <div>
+                        <div class="login_border">
                             <label for="user_pass" class="hidden"></label>
                             <p>비밀번호</p>
                             <input type="password" value="" id="user_pass" name="password" minlength="12" maxlength="16">
