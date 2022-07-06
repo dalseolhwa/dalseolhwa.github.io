@@ -262,6 +262,14 @@ header .logo a{
     display: block;
     text-indent: -9999em;
 }
+header .header_under {
+    display: flex;
+    align-items: center;
+    font-size:calc(var(--body-fz)*0.9375);
+    padding-left: 150px;
+    gap: 5px;
+}
+
 .search_section{
     position: fixed;
     top: 0;

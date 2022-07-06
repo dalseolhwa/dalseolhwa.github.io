@@ -1,0 +1,66 @@
+main{
+    text-align: center;
+}
+main .content_tt{
+    text-align: center;
+    padding-top:calc(var(--line-height)*3) ;
+}
+.happy_benefit{
+    padding-top: 124px;
+}
+.happy_benefit .hb_banner{
+    width: 1098px;
+    height: 136px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #c7f5fe, #ffcef3);
+    margin: 0 auto;
+    position: relative;
+    margin-top: var(--line-height);
+}
+.happy_benefit .phone img{
+    width: 166px;
+    height: 128px;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+}
+.happy_benefit .hbb_cont{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.happy_benefit .hb_banner_inner{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+/*-------------------happy_benefit-------------------*/
+.gamezone h2{
+    text-transform: uppercase;
+}
+.gamezone .game_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.gamezone .game_box span{
+    font-size: 50px;
+    color: var(--title-color);
+
+}
+.gamezone .game_box :hover{
+    color: var(--secondary-c);
+}
+
+.gamezone .circle_bg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-c);
+}
