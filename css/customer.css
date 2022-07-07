@@ -51,10 +51,12 @@ main .content_tt{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px 30px;
+    gap: 50px 0;
+    width: 80%;
+    margin: 0 auto;
 }
 .cms .cms_content{
-    width: 315px;
+    width: 265px;
     text-align: left;
 }
 .cms .cms_content:hover span{
@@ -136,7 +138,7 @@ main .content_tt{
 }
 .cs_use .cs_use_right{
     position: absolute;
-    right: 0;
+    right: 35px;
     top: 42%;
     border: 1px solid var(--secondary-c);
     border-radius: 10px;
@@ -178,7 +180,12 @@ main .content_tt{
     padding-top: calc(var(--line-height)* 2);
     padding-bottom: calc(var(--line-height)* 3);
 }
-
+.news table{
+    display: block;
+}
+.news tbody{
+    display: block;
+}
 .news .news_wrapper .news_content{
     display: flex;
     justify-content: space-between;
@@ -193,6 +200,6 @@ main .content_tt{
 .news .news_content a{
     font-size:calc(var(--body-fz)*1.125);
 }
-.news .news_content p{
+.news .news_content span{
     font-size:calc(var(--body-fz)*0.9375);
 }

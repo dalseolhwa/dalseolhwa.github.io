@@ -63,9 +63,9 @@
     </header>
     <div class="search_section">
         <div class="search_hd">
-            <h1 class="search_logo">
+            <h2 class="search_logo">
                 <a href="">samsungcard</a>
-            </h1>
+            </h2>
             <div class="box_search_ip">
                 <div class="input_cell">
                     <input type="search" class="i_text" id="mainSearch" name="search" title="검색어" value="" placeholder="검색어를 입력하세요" autocomplete="off">
@@ -103,7 +103,33 @@
                     </ul>
                 </div>
             </div>
-            
+        </div>
+    </div>
+    <div class="popup">
+        <h2 class="content">본 사이트는 구직용 개인 포트폴리오 사이트입니다.</h2>
+        <ul class="caption">
+            <li>※ 삼성카드와 무관함을 안내드립니다.</li>
+            <li>※ 본 사이트는 <em>CSS3 + ES6</em>이상의 문법이 적용되어있습니다.</li>
+            <li>※ 원활한 화면구성을 위해 <em>최신 Browser(Chrome, firefox)</em>를 사용 부탁드립니다.</li>
+            <li>※ 이 사이트에 사용 된 이미지의 저작권은 삼성카드에 있으므로 무단으로 사용 할 수 없습니다.</li>
+        </ul>
+        <hr>
+        <ul>
+            <li>학습기간: 2022.02.25 ~ 2022.07.13</li>
+            <li>제작기간: 2022.04.15 ~ 2022.07.07</li>
+            <li>주요특징 : html / css (flex, css 변수) / script(jQuery,library) / 웹표준 준수 / 반응형</li>
+            <li>구현 완료 페이지 : <a href="index.html">메인</a> / <a href="benefit.html">혜택</a> / <a href="customer.html">고객센터</a>  / 검색창
+            </li>
+            <li><a href="">기획서 : 2차 삼성카드 기획서 바로가기</a></li>
+            <li>제작자 : 김설화 <a href="mailto:seolhwa7898@gmil.com">seolhwa7898@gmil.com</a></li>
+        </ul>
+        <hr>
+        <div class="close">
+            <label for="popup">하루동안 안보기</label>
+            <input type="checkbox" id="popupC">
+            <button id="close">
+                <span class="material-symbols-outlined">close</span>
+            </button>
         </div>
     </div>
     <main class="container">
@@ -456,7 +482,7 @@
                         </a>
                     </div>
                         <div class="video_wrapper" id="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UrEHWclh7Co?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UrEHWclh7Co?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                 </section>
         </div>
@@ -511,7 +537,7 @@
             <section class="keyword_search con-pd">
                 <h2 class="content_tt con-bottom-pd">키워드검색</h2>
                 <div class="search_wrap">
-                    <form action="">
+                    <form action="#">
                         <label for="keyword_search">
                             <span class="hidden">검색</span>
                             <input type="search" id="keyword_search" name="keyword_search" placeholder="검색">
@@ -640,16 +666,16 @@
             <div class="footer_lline">
                 <ul>
                     <li>
-                        <a href="">ARS(유료)</a>
+                        <span>ARS(유료)</span>
                     </li>
                     <li>
-                        <a href=""><em>대표전화 1588-8700 </em></a>
+                        <span><em>대표전화 1588-8700 </em></span>
                     </li>
                     <li>
-                        <a href="">카드신청 1688-1133</a>
+                        <span>카드신청 1688-1133</span>
                     </li>
                     <li>
-                        <a href="">분실신고·한도승인 (국내) 1588-8900 (해외) 82-2-2000-8100, 800-1588-8700</a>
+                        <span>분실신고·한도승인 (국내) 1588-8900 (해외) 82-2-2000-8100, 800-1588-8700</span>
                     </li>
                 </ul>    
             </div>
@@ -683,45 +709,45 @@
                         <a href="">위치기반서비스 이용약관</a>
                     </li>
                     <li>
-                        <a href="">통신중개판매상품 이메일 lifecare.scard@samsung.com</a>
+                        <span>통신중개판매상품 이메일 lifecare.scard@samsung.com</span>
                     </li>
                 </ul>    
             </div>
             <div class="footer_lline">
                 <ul>
                     <li>
-                        <a href="">대표이사 사장 김대환</a>
+                        <span>대표이사 사장 김대환</span>
                     </li>
                     <li>
-                        <a href="">서울 중구 세종대로 67(04514)</a>
+                        <span>서울 중구 세종대로 67(04514)</span>
                     </li>
                     <li>
-                        <a href="">사업자등록번호 202-81-45602</a>
+                        <span>사업자등록번호 202-81-45602</span>
                     </li>
                     <li>
-                        <a href="">통신판매업 신고번호 제 2009-서울중구-1449호</a>
+                        <span>통신판매업 신고번호 제 2009-서울중구-1449호</span>
                     </li>
                     <li>
-                        <a href="">© SAMSUNG CARD CO., LTD. All rights reserved.</a>
+                        <span>© SAMSUNG CARD CO., LTD. All rights reserved.</span>
                     </li>
                 </ul> 
             </div>
             <div class="footer_lline">
-                <ul>
+                <ul class="social_icon">
                     <li>
-                        <i class="fa-brands fa-facebook"></i>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     </li>
                     <li>
-                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li>
-                        <i class="fa-brands fa-youtube"></i>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a> 
                     </li>
                     <li>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-b"></i>
+                        <a href="#"><i class="fa-solid fa-b"></i></a>
                     </li>
                 </ul>
             </div>

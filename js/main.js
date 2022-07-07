@@ -10,6 +10,64 @@ $('.close_btn').click(function(){
 });
 
 
+/*-------------------POPUP------------------------- */
+
+let popup = document.querySelector('.popup');
+let popupCheck = document.querySelector('#popupC');
+let popupClose = document.querySelector('#close');
+ 
+//쿠키 생성 함수
+function setCookie(name,value,day){
+    let date = new Date();
+    date.setDate(date.getDate() + day);
+
+    let cookieContent = '';
+    cookieContent += `${name}=${value};`;
+    cookieContent += `Expires=${date.toUTCString()}`;            
+
+    document.cookie = cookieContent;
+}
+
+//쿠키 확인 함수
+function getCookie(name){
+    let visited = false;
+    let cookies = document.cookie.split(';'); //문자열 ; 구분해서 배열 생성
+
+    for(let cookie of cookies){
+        if(cookie.indexOf(name) > -1){
+            visited = true;
+        }
+    }
+    if(visited){
+        popup.style.display = 'none'; 
+    }else{
+        popup.style.display = 'block'; 
+    }
+}
+getCookie('sscard');
+
+//쿠키 삭제 함수
+function delCookie(name,value){            
+
+    let date = new Date();
+    date.setDate(date.getDate() - 1);
+
+    let cookieContent = '';
+    cookieContent += `${name}=${value};`;
+    cookieContent += `Expires=${date.toUTCString()}`;            
+
+    document.cookie = cookieContent;
+}   
+
+popupClose.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+    if(popupCheck.checked){ //체크되었다면, 팝업을 다시 안보겠다, 쿠키생성
+        setCookie('sscard','MainPage',1);
+    }else{//체크x, 팝업을 다시 보겠다, 쿠키제거
+        delCookie('sscard','MainPage');
+    }
+});
+
 /*-------------------mainCon banner-------------------*/
 $('.slide_container').slick({
     arrows:false,

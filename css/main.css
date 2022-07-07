@@ -1,3 +1,40 @@
+.popup{
+    padding: 20px;
+    position: fixed;
+    left: 70px;
+    top: 150px;
+    border:1px solid var(--primary-c);
+    box-shadow:3px 5px 10px rgba(0,0,0,.2);
+    border-radius:8px;
+    z-index: 10;
+    background: var(--white);
+    height: 56vh;
+    overflow-y: auto;
+    }
+    .popup ul{
+        padding: 10px 0;
+    }
+    .caption{
+        font-size: 14px;
+    }
+    .close{
+        position: relative;
+    }
+    .close button{
+        color: var(--title-color);
+        position: absolute;
+        right: 0;
+    }
+    .popup ul a{
+        color: var(--primary-c);
+        margin: 10px;
+        border-bottom: 1px solid var(--white);
+        margin: 0;
+    }
+
+
+/*-------------------popup------------------------- */
+
 main{
     display: flex;
     padding-top: calc(var(--line-height)*6.428);
