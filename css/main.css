@@ -425,6 +425,7 @@ main aside{
     border-top: none;
     border-right: none;
     border-left: none;
+    outline: none;
 }
 
 /*-------------------card_shortcut-------------------*/

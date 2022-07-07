@@ -62,6 +62,51 @@
     
         </div>
     </header>
+    <div class="search_section">
+        <div class="search_hd">
+            <h1 class="search_logo">
+                <a href="">samsungcard</a>
+            </h1>
+            <div class="box_search_ip">
+                <div class="input_cell">
+                    <input type="search" class="i_text" id="mainSearch" name="search" title="검색어" value="" placeholder="검색어를 입력하세요" autocomplete="off">
+                </div>
+                <div class="btn_box">
+                    <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                    <button type="button" class="close_btn">닫기</button>
+                </div>
+                <div class="search_list">
+                    <ul>
+                        <li>
+                            <a href="" class="side btn f_color">#MY혜택</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#추천 삼성iD 카드</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#명세서</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#즉시결제 </a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#이용한도</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#포인트</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#개인정보 변경</a>
+                        </li>
+                        <li>
+                            <a href="" class="side btn f_color">#분할납부</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
     <main class="container">
         <section class="happy_benefit">
             <h2 class="content_tt">함께해서 행복한 특별한 나의 삼성카드 혜택</h2>
@@ -114,7 +159,7 @@
             </div>
         </section>
         <section class="event">
-            <div class="event_wrapper">
+            <div class="event_top_wrap">
                 <h2 class="content_tt">이벤트</h2>
                 <a href="" class="secondary btn f_color">전체보기 
                     <span class="material-symbols-outlined">chevron_right</span>
@@ -122,19 +167,33 @@
             </div>
             <div class="event_wrapper">
                 <div class="event_box">
-                    <img src="images/event_bg_1.png" alt="">
-                    <h3>네이버페이 포인트에 스타벅스 행운까지</h3>
-                    <p>2022.05.03~2022.05.31</p>
+                    <div class="img_wrap">
+                        <img src="images/event_bg_1.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h3>네이버페이 포인트에 스타벅스 행운까지</h3>
+                        <p>2022.05.03~2022.05.31</p>
+                    </div>
+
                 </div>
                 <div class="event_box">
-                    <img src="images/event_bg_3.png" alt="">
-                    <h3>자동자보험 신규가입시 2만원 캐시백 </h3>
-                    <p>2022.05.02~2022.05.31</p>
+                    <div class="img_wrap">
+                        <img src="images/event_bg_3.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h3>자동자보험 신규가입시 2만원 캐시백 </h3>
+                        <p>2022.05.02~2022.05.31</p>
+                    </div>
+
                 </div>
                 <div class="event_box">
-                    <img src="images/event_bg_2.png" alt="">
-                    <h3>LINK 혜택이 가득한 5월</h3>
-                    <p>2022.05.02~2022.05.31</p>
+                    <div class="img_wrap">
+                        <img src="images/event_bg_2.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h3>LINK 혜택이 가득한 5월</h3>
+                        <p>2022.05.02~2022.05.31</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -306,5 +365,9 @@
 
     gtag('config', 'G-M7EDVK4TDH');
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/benefit.js"></script>
 </body>
 </html>

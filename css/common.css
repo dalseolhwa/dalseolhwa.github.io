@@ -101,6 +101,7 @@ em{
 }
 .primary.btn:hover{
     background-color: var(--hover-c);
+
 }
 .secondary.btn{
     height: 32px;
@@ -266,7 +267,7 @@ header .header_under {
     display: flex;
     align-items: center;
     font-size:calc(var(--body-fz)*0.9375);
-    padding-left: 150px;
+    padding-left: 277px;
     gap: 5px;
 }
 
@@ -309,9 +310,9 @@ header .header_under {
     justify-content: space-between;
     margin: 0 auto;
     background-color: var(--white);
+    position: relative;
 }
 .search_section .box_search_ip{
-    position: relative;
     padding-right: 120px;
     padding-left: 25px;
     display: flex;
@@ -324,6 +325,7 @@ header .header_under {
     border-left: none;
     border-bottom: 2px solid var(--body-tc);
     width: 274px;
+    flex: 1;
 }
 .search_section .input_cell input{
     width: 100%;
@@ -331,13 +333,15 @@ header .header_under {
     font-size:calc(var(--body-fz)*1.125);
     outline: none;
     border: none;
+
 }
 .search_section .btn_box{
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-
+    display: flex;
+    gap: 20px;
 }
 .search_section .btn_box span{
     font-size:calc(var(--body-fz)*2);
@@ -347,8 +351,8 @@ header .header_under {
 .search_section .search_list{
     position: absolute;
     top: 80px;
-    right: -66px;
-    left: -240px;
+    right: 0;
+    left: 0;
     padding: 15px 84px 0;
     min-height: 389px;
     max-height: 480px;
@@ -361,6 +365,7 @@ header .header_under {
     gap: 10px;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-top: calc(var(--line-height)* 2);
 }
 .search_section .close_btn{
     width: 59px;
