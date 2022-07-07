@@ -73,8 +73,8 @@ main .content_tt{
 }
 
 .cms .cms_content p{
-    font-size:calc(var(--body-fz)*0.9375);
-    color: var(--body-tc);
+    font-size: calc(var(--body-fz)*0.8125);
+    color: #7F8487;
 }
 /*-------------------cms-------------------*/
 
@@ -131,8 +131,8 @@ main .content_tt{
     color: var(--primary-c);
 }
 .cs_use .cu_wrapper p{
-    font-size:calc(var(--body-fz)*0.9375);
-    color: var(--body-tc);
+    font-size: calc(var(--body-fz)*0.8125);
+    color: #7F8487;
     text-align-last: left;
     padding-top: 5px;
 }
@@ -151,8 +151,8 @@ main .content_tt{
     font-size:calc(var(--body-fz)*1.125);
 }
 .cs_use .cs_use_right p{
-    font-size:calc(var(--body-fz)*0.9375);
-    color: var(--body-tc);
+    font-size: calc(var(--body-fz)*0.8125);
+    color: #7F8487;
     padding-top: 5px;
 }
 .cs_use .cs_use_right img{
