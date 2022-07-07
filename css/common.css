@@ -175,7 +175,12 @@ header{
     box-shadow: 3px 0px 3px rgba(0, 0, 0, .3);
     background: #fff;
     z-index: 100;
+    overflow:hidden;
+    position:absolute;
+    left: 0;right: 0;top: 0;
 }
+
+
 header .headerTop{
     display: flex;
     justify-content: space-between;
@@ -203,19 +208,37 @@ header .headerTop .menu_s {
     gap: 10px;
     
 }
-header .headerMain nav{
+header .headerMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .headerMain .main_menu{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 55px;
     font-size: 1;
     font-weight: 600;
+    width:100%; 
+    margin:0 auto;
 }
-header nav ul{
+header .headerMain .main_menu > li > a{
     display: flex;
-    gap:50px;
+    line-height:50px; 
+    position: relative;
 }
-
+header .headerMain .main_menu .sub_menu{
+    width:100%; 
+    display: none; 
+    position: absolute;
+}
+header .headerMain .main_menu .sub_menu li >a{
+    white-space: nowrap;
+} 
+header .headerMain .main_menu > li:hover ul{
+    display:block;
+}
 
 header .headerMain{
     display: flex;
@@ -269,6 +292,11 @@ header .header_under {
     font-size:calc(var(--body-fz) * 0.9375);
     padding-left: 277px;
     gap: 5px;
+}
+header .main_menu:after{
+    content:'';
+    display:block; 
+    clear:both; 
 }
 
 .search_section{
