@@ -234,7 +234,7 @@ header .headerMain .main_menu > li > a{
     position: relative;
     font-size:calc(var(--body-fz) * 1.125);
     text-transform: uppercase;
-    
+
 }
 header .headerMain .main_menu .sub_menu{
     width:100%; 
@@ -249,25 +249,12 @@ header .headerMain .main_menu .sub_menu{
     top: 90px;
     border-top: 1px solid #ebebeb;
 }
-header .headerMain .main_menu .sub_menu li{
-    /* display: flex;
-    justify-content: center; */
-} 
 header .headerMain .main_menu .sub_menu > li >a{
     white-space: nowrap;
     font-size: 15px;
     color: var(--title-c);
     position: relative;
 } 
-/* header .headerMain .main_menu .sub_menu > li > a:after{
-    content: '';
-    height: 2px;
-    background: var(--primary-c);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: calc(100% + 5px);
-}  */
 header .headerMain .main_menu .sub_menu > li > ul > li > a{
     font-size: 12px;
     color: var(--body-tc);
