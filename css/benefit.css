@@ -105,6 +105,7 @@ main .content_tt{
 .event .event_box .img_wrap{
     width: 425px;
     overflow: hidden;
+    border-radius: 10px;
 }
 .event .event_box .img_wrap a{
     display: inline-block;
