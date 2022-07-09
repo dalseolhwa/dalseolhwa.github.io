@@ -36,7 +36,7 @@
 
 main{
     display: flex;
-    padding-top: calc(var(--line-height) * 6.428);
+    padding-top: 140px;
 }
 main .mainCon{
     width: 860px;
@@ -56,7 +56,7 @@ main aside{
 }
 .banner_slide .slide_container{
     width: 100%;
-    height: 380px;
+    height: 44%;
     position: relative;
 }
 .banner_slide .slick-slide img {
@@ -193,8 +193,8 @@ main aside{
     transform:translateY(-10px);
 }
 .card_slide .card_tap_wrapper img{
-    width: 80%;
-    height: 80%;
+    width: 85px;
+    height: 136px;
     margin: 0 auto;
 }
 .card_tap_wrapper .slick-list{ 
@@ -528,6 +528,96 @@ main aside{
     right: 0;
     
 }
+@media (max-width:1320px) {
+   main{
+    padding: calc(var(--line-height) * 6.428) 10px 0 10px;
+   }
+   main aside{
+    width: 397px;
+    padding-left: 10px;
+    }
+    main .mainCon{
+        padding-right: 10px;
+    }
+    .ss_story .paging {
+        bottom: 35px;
+    }
+}
+@media (max-width:1240px) {
+    main aside {
+        width: 322px;
+    }
+    .login form .logBtn {
+        left: 0;
+        top: 139px;
+    }
+    .ss_story .paging {
+        top: 206px;
+    }
+    .login form .logBtn input {
+        width: 275px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid var(--title-color);
+    }
+}
+@media (max-width:1170px){
+    main .mainCon {
+        padding: 0;
+        margin: 0 auto;
+    }
+    main {
+        display: block;
+    }
+    main aside{
+        display: none;
+    }
+}
 
-
-
+@media (max-width:832px){
+    main .mainCon {
+        width: 95%;
+    }
+    .card_slide .cardList {
+        width: 750px;
+    }
+    .card_slide .controls .prev {
+        margin-left: -349px;
+    }
+    .card_slide .controls .next {
+        margin-left: 350px;
+    }
+    .periodic_payment .pp_wrap .icon_circle {
+        width: 85px;
+        height: 85px;
+    }
+    .periodic_payment .pp_wrap .icon_circle span {
+        font-size: 40px;
+    }
+    .direct_auto .card li .caption p {
+        padding-right: 29px;
+    }
+    .direct_auto .card li:nth-child(3) .caption p {
+        padding-right: 49px;
+    }
+    .direct_auto .card li {
+        width: 175PX;
+    }
+}
+@media (max-width:768px){
+    main{
+        padding-top: 100px;
+    }
+    .banner_slide .controls .next {
+        margin-left: 330px;
+    }
+    .banner_slide .controls .prev {
+        margin-left: -330px;
+    }
+    .card_slide .card_info_btn a {
+        margin-right: 25px;
+    }
+    .card_slide .cardList {
+        width: 681px;
+    }
+}
