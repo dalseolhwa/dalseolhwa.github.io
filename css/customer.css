@@ -56,7 +56,7 @@ main .content_tt{
     margin: 0 auto;
 }
 .cms .cms_content{
-    width: 265px;
+    width: 32%;
     text-align: left;
 }
 .cms .cms_content:hover span{
@@ -65,7 +65,7 @@ main .content_tt{
 .cms .cms_content .cms_sb{
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: space-between;
 
 }
 .cms .cms_content .cms_sb h3{
@@ -105,7 +105,7 @@ main .content_tt{
     align-items: center;
     flex-wrap: wrap;
     gap: 30px ;
-    width: 1000px;
+    width: 84.1%;
 }
 .cs_use .cu_wrapper{
     border: 1px solid var(--secondary-c);
@@ -203,3 +203,92 @@ main .content_tt{
 .news .news_content span{
     font-size:calc(var(--body-fz)*0.9375);
 }
+@media (max-width:1320px) {
+    main{
+        padding: 0 20px;
+    }
+    main .qna {
+        padding-top: 99px;
+    }
+ }/* 1320 이하 */
+
+ @media (max-width:1240px) {
+    .cs_use .cs_use_left {
+        justify-content: normal;
+    }
+    .cs_use .cu_wrapper {
+        width: 215px;
+    }
+ }/* 1240 이하 */
+
+ @media (max-width:970px) {
+    .cs_use .cs_use_right {
+        right: 9%;
+        width: 150px;
+    }
+
+ }/* 970 이하 */
+
+ @media (max-width:768px) {
+    main .qna {
+        padding-top: 59px;
+    }
+    .cs_custom .cs_box a {
+        font-size: 65px;
+    }
+
+ }/* 768 이하 */
+ @media (max-width:724px) {
+    .qna .search_list {
+        width: 576px;
+    }
+    .cs_use .cs_use_right {
+        right: 0;
+        width: 116px;
+        height: 210px;
+    }
+    .cms .cms_wrapper{
+        width: 100%;
+    }
+
+ }/* 724 이하 */
+ @media (max-width:480px) {
+    .qna .search_list {
+        width: 410px;
+    }
+    .cms .cms_content {
+        width: 41%;
+    }
+    .cs_custom .cs_box_wrapper {
+        flex-wrap: wrap;
+    }
+    .cs_use {
+        padding-bottom: 115px;
+    }
+    .cs_use .cs_use_left {
+        width: 100%;
+    }
+    .cs_use .cu_wrapper {
+        width: 204px;
+    }
+    .cs_use .cs_use_right {
+        left: 50%;
+        width: 80%;
+        height: 83px;
+        top: 476px;
+        transform: translateX(-50%);
+    }
+    .cs_use .cs_use_right img {
+        padding-top: 0;
+    }
+    .cs_use .cs_use_right .app_wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cs_use .cs_use_right p {
+        padding: 0;
+    }
+    .news{
+        width: 100%;
+    }
+ }/* 480 이하 */

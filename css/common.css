@@ -176,6 +176,7 @@ header{
     background: #fff;
     z-index: 100;
     overflow:hidden;
+    height: 88px;
 }
 
 
@@ -217,6 +218,10 @@ header .mobile_menu-toggle{
 }
 header .mobile_menu_close{
     display: none;
+}
+header .headerMain nav{
+    display: flex;
+    gap: 100px;
 }
 header .headerMain .main_menu{
     display: flex;
@@ -260,6 +265,9 @@ header .headerMain .main_menu .sub_menu > li >a{
     color: var(--title-c);
     position: relative;
 } 
+header .main_menu > li > a .material-symbols-outlined{
+    display: none;
+}
 header .headerMain .main_menu .sub_menu > li > ul > li > a{
     font-size: 12px;
     color: var(--body-tc);
@@ -272,7 +280,6 @@ header .headerMain .hmainRight{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 248px;
     gap: 10px;
     font-size:calc(var(--body-fz) * 0.875);
     font-weight: 300;
@@ -456,9 +463,6 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerMain .main_menu > li > a {
         font-size: var(--body-fz);
     }
-    header .headerMain .hmainRight{
-        width: 225px;
-    }
     header .headerMain .main_menu .sub_menu{
         gap: 15px;
     }
@@ -473,12 +477,15 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     }
 }
 @media (max-width:900px){
+    header .headerMain {
+        padding: 0;
+    }
+    header .headerMain nav {
+        gap: 0;
+    }
 
     header .headerMain .main_menu > li{
         padding: 0 10px;
-    }
-    header .headerMain .hmainRight {
-        width: 210px;
     }
     footer .footer_lline ul {
         gap: 0 5px;
@@ -492,9 +499,6 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerMain {
         padding: 0;
     }
-    header .headerMain .hmainRight {
-        width: 210px;
-    }
     header .headerMain .hmainRight .searchWrap{
         border: none;
     }
@@ -503,9 +507,6 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     }
     header .headerMain .hmainRight .searchWrap span{
         font-size: 25px;
-    }
-    header .headerMain .hmainRight {
-        width: 100px;
     }
     header .headerMain .login h2{
         display: none;
@@ -517,6 +518,9 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
         gap: 0 5px;
         flex-wrap: wrap;
         padding: 0;
+    }
+    .search_section .search_hd {
+        width: 80%;
     }
 
 }
@@ -551,9 +555,7 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerMain .main_menu{
         display: none;
     }
-    header .headerMain .hmainRight {
-        width: 60px;
-    }
+    
     header .headerMain .hmainRight .searchWrap{
         padding: 0;
     }
@@ -565,28 +567,90 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
         bottom: 0;
         background: var(--white);
         z-index: 101;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
     }
     header nav.active .main_menu{
         display: block;
+        padding-top: 28px;
     }
     header .headerMain .main_menu > li {
-        padding: 0 50px;
+        padding: 0 100px;
+        position:relative;
+        flex-direction: column
     }
     header .headerMain .main_menu > li > a {
         font-size: calc(var(--body-fz)* 1.285);
     }
     header .headerMain .main_menu .sub_menu{
         border: 0;
+        position: relative;
+        top: 0;
     }
+    /* header .headerMain .main_menu >li >ul.ui-accordion-content-active{
+       height: auto;
+    } */
     header .headerMain .main_menu .sub_menu ul{
         display: none;
     }
-    
-    
-}
+    header nav.active .logo{
+        padding-top: 40px;
+    }
+    header .logo a{
+        margin: 0 auto;
+    }
+    header .headerMain .main_menu > li > a{
+        position : inherit;
+    }
+    header .main_menu > li > a .material-symbols-outlined{
+        display: block;
+        transform:rotate(0deg);
+        transition:0.5s;
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header .main_menu > li > a.ui-state-active .material-symbols-outlined{
+        transform:rotate(45deg);
+    }
+    .search_section .search_hd {
+        display: block;
+        width: 80%;
+        height: 80px;
+        padding: 0;
+    }
+    .search_section .box_search_ip {
+        display: block;
+    }
+    .search_section .box_search_ip {
+        padding-right: 0;
+        width: 85%;
+        height: 30px;
+    }
+    .search_section .input_cell{
+        flex: none;
+        width: 100%;
+    }
+    .search_section .btn_box {
+        top: 74%;
+        gap: 0;
+    }
+    .search_section  .search_logo{
+        padding-left: 20px;
+    }
+    .search_section .search_list ul {
+        width: 80%;
+        gap: 10px;
+        padding-top: var(--line-height);
+    }
+    .search_section .search_list{
+        padding: 10px 20px;
+    }
 /*768px 여기서부터 반응형 진행  */
-
+}
+@media (max-width:480px) {
+    header .headerMain .main_menu > li {
+        padding: 0 50px;
+    }
+}
 

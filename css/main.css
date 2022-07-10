@@ -105,10 +105,10 @@ main aside{
 
 }
 .banner_slide .controls .prev{
-    margin-left: -419px;
+    margin-left: -47%;
 }
 .banner_slide .controls .next{
-    margin-left: 416px;
+    margin-left: 47%;
 }
 .banner_slide .paging{
     display: flex;
@@ -145,7 +145,7 @@ main aside{
     
 }
 .card_slide .cardList{
-    width: 876px;
+    width: 100%;
     height: 220px;
     overflow: hidden;
     margin-top: 28px;
@@ -207,6 +207,9 @@ main aside{
 .card_slide .controls{
     display: block;
 }
+.card_slide .best .controls, .card_slide .corp .controls, .card_slide .premium .controls{
+    display: none;
+}
 .card_slide .controls a{
     font-size: 50px;
     color: var(--body-tc);
@@ -216,10 +219,10 @@ main aside{
     transform:translate(-50%, -50%);
 }
 .card_slide .controls .prev{
-    margin-left: -420px;
+    margin-left: -48%;
 }
 .card_slide .controls .next{
-    margin-left: 426px;
+    margin-left: 48%
 }
 
 /*-------------------benefit-------------------*/
@@ -232,6 +235,7 @@ main aside{
 }
 .benefit_slide .slide{
     position: relative;
+    
 }
 .benefit_slide .slide >img{
     width: 100%;
@@ -258,10 +262,10 @@ main aside{
     transform:translate(-50%, -50%);
 }
 .benefit_slide .controls .prev{
-    margin-left: -421px;
+    margin-left: -48%;
 }
 .benefit_slide .controls .next{
-    margin-left: 419px;
+    margin-left: 48%;
 }
 .benefit_slide .paging{
     display: flex;
@@ -538,11 +542,14 @@ main aside{
     }
     main .mainCon{
         padding-right: 10px;
+    }main .qna {
+        padding-top: 99px;
     }
     .ss_story .paging {
         bottom: 35px;
     }
-}
+}/* 1320 이하 */
+
 @media (max-width:1240px) {
     main aside {
         width: 322px;
@@ -560,7 +567,8 @@ main aside{
         border-radius: 10px;
         border: 1px solid var(--title-color);
     }
-}
+}/* 1240 이하 */
+
 @media (max-width:1170px){
     main .mainCon {
         padding: 0;
@@ -572,23 +580,14 @@ main aside{
     main aside{
         display: none;
     }
-}
+}/* 1170 이하 */
 
 @media (max-width:832px){
     main .mainCon {
         width: 95%;
     }
-    .card_slide .cardList {
-        width: 710px;
-    }
     .card_slide .slick-track {
         gap: 47px;
-    }
-    .card_slide .controls .prev {
-        margin-left: -346px;
-    }
-    .card_slide .controls .next {
-        margin-left: 347px;
     }
     .periodic_payment .pp_wrap {
         gap: 34px;
@@ -615,31 +614,17 @@ main aside{
     .direct_auto .card li .caption {
         padding: 10px;
     }
-}
+}/* 832 이하 */
+
 @media (max-width:768px){
     main{
         padding-top: 100px;
     }
-    .banner_slide .controls .next {
-        margin-left: 330px;
-    }
-    .banner_slide .controls .prev {
-        margin-left: -330px;
-    }
     .card_slide .card_info_btn a {
         margin-right: 25px;
     }
-    .card_slide .cardList {
-        width: 690px;
-    }
     .card_slide .slick-track {
         gap: 44px;
-    }
-    .card_slide .controls .prev {
-        margin-left: -330px;
-    }
-    .card_slide .controls .next {
-        margin-left: 330px;
     }
     .benefit_slide .slide_cont {
         top: 21px;
@@ -682,4 +667,70 @@ main aside{
         margin: 15px 0;
     }
 
+}/* 680 이하 */
+
+@media (max-width:680px){
+    .card_slide .card_info_btn a {
+        margin-right: 20px;
+    }
+    .card_slide .slick-track {
+        gap: 30px;
+    }
+    .periodic_payment .pp_wrap {
+        gap: 15px;
+    }
+}/* 768 이하 */
+
+@media (max-width:480px){
+    .card_slide .card_slide_wrap{
+        display: block;
+    }
+    .card_slide .best .controls, .card_slide .corp .controls, .card_slide .premium .controls{
+        display: block;
+    }
+    .card_slide .card_info_btn a {
+        margin-right: 30px;
+    }
+    .card_slide .finder {
+        position: absolute;
+        bottom: 14px;
+    }
+    .card_tap_wrapper .slick-list {
+        padding: 20px 0;
+    }
+    .banner_slide .slide_cont {
+        position: absolute;
+        left: 30px;
+        top: 25px;
+        opacity: 0;
+        transition: 0.3s 0.3s;
+    }
+    .banner_slide .slide_tt {
+        font-size: var(--body-fz);
+        line-height: calc(var(--line-height) * 1);
+    }
+    .benefit_slide .slide_cont {
+        top: 10px;
+        left: 45px;
+    }
+    .benefit_slide .slide_cont img{
+        width: 20%;
+    }
+    .benefit_slide .slide_cont h3 {
+        font-size: 13px;
+    }
+    .periodic_payment .pp_wrap{
+        flex-wrap: wrap;
+        gap: 28px 85px;
+    }
+    .periodic_payment .pp_wrap .icon_circle {
+        width: 75px;
+        height: 75px;
+    }
+    .direct_auto .card {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 28px 0;
+    }
     
+}/* 480 이하 */

@@ -33,14 +33,15 @@
         </div>
         <div class="headerMain">
             <button class="mobile_menu-toggle material-symbols-outlined">menu</button>
-            <h1 class="logo">
-                <a href="index.html">samsungcard</a>
-            </h1>
+
             <nav class="gnb">
+                <h1 class="logo">
+                    <a href="index.html">samsungcard</a>
+                </h1>
                 <button class="mobile_menu_close material-symbols-outlined">close</button>
-                <ul class="main_menu">
+                <ul class="main_menu" id="accordion">
                     <li>
-                        <a href="">my</a>
+                        <a href="">my<span class="material-symbols-outlined">add</span></a>
                         <ul class="sub_menu">
                             <li>
                                 <a href="">명세서</a>
@@ -129,7 +130,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="">카드</a>
+                        <a href="">카드<span class="material-symbols-outlined">add</span></a>
                         <ul class="sub_menu">
                             <li>
                                 <a href="">카드안내</a>
@@ -169,7 +170,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="">금융</a>
+                        <a href="">금융<span class="material-symbols-outlined">add</span></a>
                         <ul class="sub_menu">
                             <li>
                                 <a href="#">대출</a>
@@ -199,7 +200,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="benefit.html">혜택</a>
+                        <a href="benefit.html">혜택<span class="material-symbols-outlined">add</span></a>
                         <ul class="sub_menu">
                             <li>
                                 <a href="benefit.html">이벤트</a>
@@ -314,7 +315,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">자동차</a>
+                        <a href="#">자동차<span class="material-symbols-outlined">add</span></a>
                         <ul class="sub_menu">
                             <li><a href="#">다이렉트 오토 메인</a></li>
                             <li>
@@ -352,7 +353,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="">라이프</a>
+                        <a href="">라이프<span class="material-symbols-outlined">add</span></a>
                         <ul class="sub_menu">
                             <li>
                                 <a href="#">삼성카드 스토리</a>
@@ -384,7 +385,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="customer.html">고객센터</a>
+                        <a href="customer.html">고객센터<span class="material-symbols-outlined">add</span></a>
                         <ul class="sub_menu">
                             <li>
                                 <a href="customer.html">고객센터 종합안내</a>
@@ -571,6 +572,7 @@
                         </ul>
                     </li>
                 </ul>
+
             </nav>
             <div class="hmainRight">
                 <div class="login">
@@ -757,8 +759,11 @@
                                     <img src="images/card_iD_MOVE.gif" alt="">
                                     <h3>삼성 iD MOVE</h3>
                                 </div>
-
                             </div>
+                            <p class="controls">
+                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                                <a href="" class="next material-symbols-outlined">chevron_right</a>
+                            </p>
                         </div>
                         <div class="card_cont id">
                             <div class="card_tap_wrapper">
@@ -824,6 +829,10 @@
                                     <h3>THE O</h3>
                                 </div>
                             </div>
+                            <p class="controls">
+                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                                <a href="" class="next material-symbols-outlined">chevron_right</a>
+                            </p>
                         </div>
                         <div class="card_cont corp" >
                             <div class="card_tap_wrapper">
@@ -847,8 +856,11 @@
                                     <img src="images/card_corporate_5.png" alt="">
                                     <h3>삼성 스카이패스 법인카드</h3>
                                 </div>
-
                             </div>
+                            <p class="controls">
+                                <a href="" class="prev material-symbols-outlined">chevron_left</a>
+                                <a href="" class="next material-symbols-outlined">chevron_right</a>
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -1289,7 +1301,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>

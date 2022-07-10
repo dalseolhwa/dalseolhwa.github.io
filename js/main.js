@@ -1,6 +1,5 @@
 
 
-
 /*-------------------POPUP------------------------- */
 
 let popup = document.querySelector('.popup');
@@ -91,14 +90,42 @@ $('.banner_slide .btns').click(function(){
 
 
 /*-------------------card_slide-------------------*/
-$('.cardList .card_tap_wrapper').slick({
-    arrows:false,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000
+// $('.cardList .card_tap_wrapper').slick({
+//     arrows:false,
+//     infinite: true,
+//     slidesToShow: 5,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 4000
+// });
+
+
+$(window).resize(function(){
+    if ($(window).width() > 480) {  // 다바이스 크기가 480이상일때 
+        $('.cardList .card_tap_wrapper').slick({
+            arrows:false,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000
+        });
+    
+    }else{
+        $('.cardList .card_tap_wrapper').slick({
+            arrows:false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000
+        });
+    }
 });
+
+    
+
+
 
 $('.card_cont .controls .next').click(function(e){
     e.preventDefault();
@@ -133,7 +160,6 @@ cBtn.click(function(e){
 
     targetList.show();
 });
-
 
 
 

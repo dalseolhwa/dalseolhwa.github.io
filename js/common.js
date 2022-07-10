@@ -14,14 +14,19 @@ let mainMenu = $('nav > ul > li'),
     headerHeight = header.outerHeight();
 
     mainMenu.each(function(){
-    $(this).mouseover(function(){
-        let subMenuHeight = $(this).find('ul').outerHeight();
-		let totalHeight = subMenuHeight + headerHeight;
-        header.css({height:`${totalHeight}px`});
-    });
-    $(this).mouseout(function(){
-        header.css({height:`${headerHeight}px`});
-    });
+        $(this).mouseover(function(){
+            if($(window).width()>500){
+                let subMenuHeight = $(this).find('ul').outerHeight();
+                let totalHeight = subMenuHeight + headerHeight;
+                header.css({height:`${totalHeight}px`});
+            }
+        });
+        $(this).mouseout(function(){
+            if($(window).width()>500){
+                header.css({height:`${headerHeight}px`});
+            }
+           
+        });
     });
 
     
@@ -39,3 +44,13 @@ mobileMenuClose.click(function(){
     mobileMenu.removeClass('active');
     $('body').css({overflow:'auto'});
 });
+
+if($(window).width() < 770){
+    $(function(){
+        $( "#accordion" ).accordion({
+          collapsible: true
+        });
+    });
+}
+
+  
