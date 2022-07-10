@@ -215,6 +215,9 @@ header .headerMain{
 header .mobile_menu-toggle{
     display: none;
 }
+header .mobile_menu_close{
+    display: none;
+}
 header .headerMain .main_menu{
     display: flex;
     justify-content: flex-start;
@@ -528,24 +531,23 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerTop {
         display: none;
     }
-    .mobile_menu-toggle{
+    header .mobile_menu-toggle{
         display: block;
         color: var(--title-color);
         cursor: pointer;
         font-size: 25px;
         padding: 0;
     }
-    /* .active .mobile_menu-toggle{
-        color: #555555;
-    }
+
     .active .mobile_menu_close{
         display: block;
-        color: var(--white);
+        color: var(--title-color);
         cursor: pointer;
         position: fixed;
-        left: 2px;
-        top: 55px;
-    } */
+        top: 80px;
+        right: 20px;
+        font-size: 30px;
+    } 
     header .headerMain .main_menu{
         display: none;
     }
@@ -555,6 +557,34 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerMain .hmainRight .searchWrap{
         padding: 0;
     }
+    header nav.active {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--white);
+        z-index: 101;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav.active .main_menu{
+        display: block;
+    }
+    header .headerMain .main_menu > li {
+        padding: 0 50px;
+    }
+    header .headerMain .main_menu > li > a {
+        font-size: calc(var(--body-fz)* 1.285);
+    }
+    header .headerMain .main_menu .sub_menu{
+        border: 0;
+    }
+    header .headerMain .main_menu .sub_menu ul{
+        display: none;
+    }
+    
 }
 /*768px 여기서부터 반응형 진행  */
 

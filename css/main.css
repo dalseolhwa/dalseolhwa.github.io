@@ -151,7 +151,7 @@ main aside{
     margin-top: 28px;
 }
 .card_slide .card_cont{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -579,13 +579,19 @@ main aside{
         width: 95%;
     }
     .card_slide .cardList {
-        width: 750px;
+        width: 710px;
+    }
+    .card_slide .slick-track {
+        gap: 47px;
     }
     .card_slide .controls .prev {
-        margin-left: -349px;
+        margin-left: -346px;
     }
     .card_slide .controls .next {
-        margin-left: 350px;
+        margin-left: 347px;
+    }
+    .periodic_payment .pp_wrap {
+        gap: 34px;
     }
     .periodic_payment .pp_wrap .icon_circle {
         width: 85px;
@@ -603,6 +609,12 @@ main aside{
     .direct_auto .card li {
         width: 175PX;
     }
+    .direct_auto .card li .img_wrap {
+        width: 175px;
+    }
+    .direct_auto .card li .caption {
+        padding: 10px;
+    }
 }
 @media (max-width:768px){
     main{
@@ -618,6 +630,55 @@ main aside{
         margin-right: 25px;
     }
     .card_slide .cardList {
-        width: 681px;
+        width: 690px;
     }
-}
+    .card_slide .slick-track {
+        gap: 44px;
+    }
+    .card_slide .controls .prev {
+        margin-left: -330px;
+    }
+    .card_slide .controls .next {
+        margin-left: 330px;
+    }
+    .benefit_slide .slide_cont {
+        top: 21px;
+        left: 95px;
+    }
+    .periodic_payment .pp_wrap {
+        gap: 31px;
+    }
+    .direct_auto .card li {
+        width: 155PX;
+    }
+    .direct_auto .card li .img_wrap {
+        width: 155px;
+    }
+    .direct_auto .card li .caption {
+        padding: 10px;
+    }
+    .life{
+        display: none;
+    }
+    main .mainSide {
+        display: block;
+        border: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 95%;
+    }
+    main .mainSide .login, main .mainSide .keyword_search, .mainSide .ss_story{
+        display: none;
+    } 
+    main .mainSide .card_shortcut .card_go , .banking .card_go{
+        padding: 5px 7px 5px 14px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    main .mainSide .card_shortcut .card_go:nth-child(3), .banking .card_go:nth-child(2n+1){
+        margin: 15px 0;
+    }
+
