@@ -708,7 +708,34 @@ main aside{
     .periodic_payment .pp_wrap {
         gap: 15px;
     }
-}/* 768 이하 */
+}/* 680 이하 */
+@media (max-width:600px){
+    .card_slide .card_slide_wrap{
+        display: block;
+    }
+    .card_slide .card_info_btn a {
+        margin-right: 30px;
+    }
+    .card_slide .finder {
+        position: absolute;
+        top: 90%;
+    }
+    .periodic_payment .pp_wrap {
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+    .direct_auto .card {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 28px 0;
+    }
+    .direct_auto .card li {
+        width: 200px;
+    }
+    .direct_auto .card li .img_wrap {
+        width: 100%;
+    }
+}/* 600 이하 */
 
 @media (max-width:480px){
     .card_slide .card_slide_wrap{
@@ -761,3 +788,26 @@ main aside{
         display: none;
     }
 }/* 480 이하 */
+@media (max-width: 340px){
+    .banner_slide .slide_cont {
+        left: 20px;
+        top: 10px;
+    }
+    .card_slide .card_info_btn a {
+        margin-right: 20px;
+    }
+
+    .secondary.btn {
+        padding: 0 3px 0 10px;
+    }
+    .direct_auto .card li {
+        width: 80%;
+    }
+    .direct_auto .card li .img_wrap {
+        width: 100%;
+    }
+    footer {
+        box-shadow: 0px -1px 0px rgb(0 0 0 / 30%);
+        padding: calc(var(--line-height) * 2) 15px var(--line-height) 15px;
+    }
+}/* 340 이하 */
