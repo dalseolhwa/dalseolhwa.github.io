@@ -216,3 +216,22 @@ $('.benefit_slide .slide_container').on('afterChange', function(event, slick, cu
 $('.ss_story .slide_container').on('afterChange', function(event, slick, currentSlide, nextSlide){
     $('.ss_story .paging .currnet').text(currentSlide + 1);
   });
+
+/*-------------------card_shortcut , banking-------------------*/
+
+let btnBG = $('.card_shortcut .card_go');
+
+
+
+    btnBG.mouseenter(function(){
+        if($(window).width() < 770){
+          $(this).find('.bg').stop().animate({width:'100%'});  
+        }
+      });
+    btnBG.mouseleave(function(){
+        if($(window).width() < 770){
+        $(this).find('.bg').stop().animate({width:'0%'});
+        }
+      });
+
+

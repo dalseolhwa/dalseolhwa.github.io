@@ -675,8 +675,28 @@ main aside{
     main .mainSide .card_shortcut .card_go:nth-child(3), .banking .card_go:nth-child(2n+1){
         margin: 15px 0;
     }
+    .card_shortcut .card_go{
+        position: relative;
+    }
+    .card_shortcut .card_go .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    .card_shortcut .card_go .bg span{
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 80px;
+        color: #fff;
+        background-color: rgba(25, 142, 245, .2);
+        border-radius: 10px;
+    }
 
-}/* 680 이하 */
+}/* 768 이하 */
 
 @media (max-width:680px){
     .card_slide .card_info_btn a {

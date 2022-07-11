@@ -15,14 +15,14 @@ let mainMenu = $('nav > ul > li'),
 
     mainMenu.each(function(){
         $(this).mouseover(function(){
-            if($(window).width()>500){
+            if($(window).width()>770){
                 let subMenuHeight = $(this).find('ul').outerHeight();
                 let totalHeight = subMenuHeight + headerHeight;
                 header.css({height:`${totalHeight}px`});
             }
         });
         $(this).mouseout(function(){
-            if($(window).width()>500){
+            if($(window).width()>770){
                 header.css({height:`${headerHeight}px`});
             }
            
@@ -48,13 +48,15 @@ mobileMenuClose.click(function(){
 });
 
 
-if($(window).width() < 770){
+
     
     mainMenu.find('> a').click(function(e){
-        e.preventDefault();
-        $(this).next().slideToggle();
-        $(this).next().siblings('.sub_menu').slideUp();
-        $(this).toggleClass('active');
-        $(this).find('a').removeClass('active');
+        if($(window).width() < 770){
+            e.preventDefault();
+            $(this).next().slideToggle();
+            $(this).parent().siblings().find('.sub_menu').slideUp();
+            $(this).toggleClass('active');
+            $(this).parent().siblings().find('> a').removeClass('active');
+        }
     });
-}
+
