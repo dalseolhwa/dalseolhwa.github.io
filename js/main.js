@@ -99,32 +99,56 @@ $('.banner_slide .btns').click(function(){
 //     autoplaySpeed: 4000
 // });
 
-
-$(window).resize(function(){
-    if ($(window).width() > 480) {  // 다바이스 크기가 480이상일때 
-        $('.cardList .card_tap_wrapper').slick({
-            arrows:false,
-            infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000
-        });
-    
-    }else{
-        $('.cardList .card_tap_wrapper').slick({
-            arrows:false,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000
-        });
-    }
+/*
+$('.cardList .card_tap_wrapper').each(function(){
+    $(window).resize(function(){
+        if ($(window).innerWidth() > 480) {  // 다바이스 크기가 480이상일때 
+            $('.cardList .card_tap_wrapper').slick({
+                arrows:false,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000
+            });
+        }else if(($(window).innerWidth() < 480)){
+            $('.cardList .card_tap_wrapper').slick({
+                arrows:false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000
+            });
+        }
+    });
 });
+*/
+$('.cardList .card_tap_wrapper').slick({
+    arrows:false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll:1
+        }
+      }
 
-    
-
+    ]
+});
 
 
 $('.card_cont .controls .next').click(function(e){

@@ -555,7 +555,6 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerMain .main_menu{
         display: none;
     }
-    
     header .headerMain .hmainRight .searchWrap{
         padding: 0;
     }
@@ -571,7 +570,7 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     }
     header nav.active .main_menu{
         display: block;
-        padding-top: 28px;
+        padding-top: calc(var(--line-height)* 2);
     }
     header .headerMain .main_menu > li {
         padding: 0 100px;
@@ -585,10 +584,9 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
         border: 0;
         position: relative;
         top: 0;
+        display: none;
+        flex-direction: column;
     }
-    /* header .headerMain .main_menu >li >ul.ui-accordion-content-active{
-       height: auto;
-    } */
     header .headerMain .main_menu .sub_menu ul{
         display: none;
     }
@@ -601,7 +599,7 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerMain .main_menu > li > a{
         position : inherit;
     }
-    header .main_menu > li > a .material-symbols-outlined{
+    header .main_menu > li > a > .material-symbols-outlined{
         display: block;
         transform:rotate(0deg);
         transition:0.5s;
@@ -610,8 +608,8 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
         right: 10px;
         top: 14px;
     }
-    header .main_menu > li > a.ui-state-active .material-symbols-outlined{
-        transform:rotate(45deg);
+    header .main_menu > li > a.active > .material-symbols-outlined{
+        transform:rotate(180deg);
     }
     .search_section .search_hd {
         display: block;
@@ -652,5 +650,6 @@ footer .footer_lline .social_icon .fa-brands, .fa-solid{
     header .headerMain .main_menu > li {
         padding: 0 50px;
     }
+
 }
 

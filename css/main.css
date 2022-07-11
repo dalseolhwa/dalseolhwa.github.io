@@ -138,6 +138,9 @@ main aside{
 
 
 /*-------------------card_slide-------------------*/
+.card_slide{
+    position: relative;
+}
 .card_slide .card_slide_wrap{
     display: flex;
     justify-content: space-between;
@@ -626,6 +629,12 @@ main aside{
     .card_slide .slick-track {
         gap: 44px;
     }
+    .card_tap_wrapper .slick-list {
+        padding: 20px 0;
+    }
+    .card_slide .best .controls, .card_slide .corp .controls, .card_slide .premium .controls{
+        display: block;
+    }
     .benefit_slide .slide_cont {
         top: 21px;
         left: 95px;
@@ -685,19 +694,15 @@ main aside{
     .card_slide .card_slide_wrap{
         display: block;
     }
-    .card_slide .best .controls, .card_slide .corp .controls, .card_slide .premium .controls{
-        display: block;
-    }
+
     .card_slide .card_info_btn a {
         margin-right: 30px;
     }
     .card_slide .finder {
         position: absolute;
-        bottom: 14px;
+        top: 90%;
     }
-    .card_tap_wrapper .slick-list {
-        padding: 20px 0;
-    }
+
     .banner_slide .slide_cont {
         position: absolute;
         left: 30px;
@@ -732,5 +737,7 @@ main aside{
         flex-wrap: wrap;
         gap: 28px 0;
     }
-    
+    main .controls, .card_slide .best .controls, .card_slide .corp .controls, .card_slide .premium .controls {
+        display: none;
+    }
 }/* 480 이하 */
