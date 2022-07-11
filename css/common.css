@@ -272,13 +272,11 @@ header .headerMain .main_menu .sub_menu > li > ul > li > a{
     font-size: 12px;
     color: var(--body-tc);
 }
-@media (min-wiath:768px) {
+@media (min-width:768px) {
     header .headerMain .main_menu > li:hover .sub_menu{
         display:flex;
     }
 }
-
-
 header .headerMain .hmainRight{
     display: flex;
     justify-content: space-between;
