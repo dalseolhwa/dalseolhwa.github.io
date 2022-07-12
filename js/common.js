@@ -29,7 +29,14 @@ let mainMenu = $('nav > ul > li'),
         });
     });
 
-    
+
+let searchlink = $('.header .search  > a');
+
+    searchlink.click(function(e){
+        e.preventDefault();
+    });
+
+
 /*-------------------mobile-------------------*/
 
 let mobileMenuOpen = $('.mobile_menu-toggle'),

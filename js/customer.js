@@ -1,11 +1,11 @@
 
 
 /*-------------------QNA-------------------*/
-let keywordBtn = $('.qna .search_list a'),
-    input = $('.qna .search_input input');
+let keywordBtnQna = $('.qna .search_list a'),
+    inputQna = $('.qna .search_cell input');
 
-    keywordBtn.click(function(e){
+    keywordBtnQna.click(function(e){
         e.preventDefault();
         keyword = $(this).text();
-        input.val(keyword);
+        inputQna.val(keyword);
     });
