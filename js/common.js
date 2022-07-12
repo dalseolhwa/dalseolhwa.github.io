@@ -70,3 +70,4 @@ let keywordBtn = $('.search_section .search_list a'),
         keyword = $(this).text();
         input.val(keyword);
     });
+    
