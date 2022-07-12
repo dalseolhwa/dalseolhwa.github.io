@@ -30,7 +30,7 @@ let mainMenu = $('nav > ul > li'),
     });
 
     
-//모바일 메뉴 
+/*-------------------mobile-------------------*/
 
 let mobileMenuOpen = $('.mobile_menu-toggle'),
     mobileMenu = header.find('nav'),
@@ -60,3 +60,13 @@ mobileMenuClose.click(function(){
         }
     });
 
+/*-------------------search_section-------------------*/
+
+let keywordBtn = $('.search_section .search_list a'),
+    input = $('.search_section .input_cell input');
+
+    keywordBtn.click(function(e){
+        e.preventDefault();
+        keyword = $(this).text();
+        input.val(keyword);
+    });
